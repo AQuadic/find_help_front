@@ -297,6 +297,10 @@ width: 50px;
 height: 50px;
 border-radius: 50%;
 }
+html[dir=rtl] .use .parts .part .numStep{
+  left: auto;
+  right: 20px;
+}
 .use .parts .part img{
   width: 66px;
   height: 66px;
@@ -1466,6 +1470,9 @@ color: #615E5E;
 font-family: "DM Sans2";
 margin-bottom: 4px;
 }
+html[dir=rtl] .provider .part1 .about_Provider #myPhoneNumber {
+text-align: end;
+}
 .provider .part1 .about_Provider .number{}
 .provider .part2{
   display: flex;
@@ -1705,6 +1712,9 @@ border: 1px solid #D1D1D1 !important;
   line-height: 21px;
   color: #2D7700;
   margin-bottom: 20px;
+}
+html[dir=rtl] #datepicker{
+  background-position: right 8px center;
 }
 #datepicker::placeholder {
   color: black;
@@ -1999,6 +2009,11 @@ font-family: "DM Sans";
   width: 270px;
   height: 46px;
   border: 1px solid #F3B100;
+}
+html[dir=rtl] .btn_Address{
+  margin-right: auto;
+  margin-left: 0;
+
 }
  .form_page label {
   font-size: 16px;
