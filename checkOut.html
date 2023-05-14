@@ -14,206 +14,233 @@
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
- 
- <div class="container breadcrumbDetails">
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <div class="container breadcrumbDetails">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
         <ol class="breadcrumb">
-         
-          <li class="breadcrumb-item " aria-current="page">Home</li>
+          <li class="breadcrumb-item" aria-current="page">Home</li>
 
-          <li class="breadcrumb-item " aria-current="page">Categories</li>
-          <li class="breadcrumb-item " aria-current="page">Repairs</li>
-          <li class="breadcrumb-item " aria-current="page">Sub category</li>
-          <li class="breadcrumb-item " aria-current="page">Check Out</li>
-          
+          <li class="breadcrumb-item" aria-current="page">Categories</li>
+          <li class="breadcrumb-item" aria-current="page">Repairs</li>
+          <li class="breadcrumb-item" aria-current="page">Sub category</li>
+          <li class="breadcrumb-item" aria-current="page">Check Out</li>
         </ol>
       </nav>
- </div>
-   
- 
-<section class="checkOut container m90">
-<div class="part1">
-  <h2 class="headtitle">Check Out</h2>
-  <form class="box">
-    <div class="box1">
-      <h3>Service Method</h3>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
-        <label class="form-check-label" for="firstRadio">Pick Up</label>
-      </li>
-      <li class="list-group-item">
-        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
-        <label class="form-check-label" for="secondRadio">Delivery</label>
-      </li>
-    </ul>
     </div>
-    <div class="box1">
-      <h3>Address</h3>
-      <div class="add">
-        <img src="./images/address.svg" alt="address">
-        <a href="Address.html" style="font-family: DM Sans3;">Add Address</a>
-        <div class="about_add" style="display: none;">
-          <p>66 Youssef Ghaly Street, Miami , Alexandria. Appointment No. 22 Floor No.4</p>
-          <p  >+20 154 256 1235</p>
-        </div>
-        
+
+    <section class="checkOut container m90">
+      <div class="part1">
+        <h2 class="headtitle">Check Out</h2>
+        <form class="box">
+          <div class="box1">
+            <h3>Service Method</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input
+                  class="form-check-input me-1"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="firstRadio"
+                  checked
+                />
+                <label class="form-check-label" for="firstRadio">Pick Up</label>
+              </li>
+              <li class="list-group-item">
+                <input
+                  class="form-check-input me-1"
+                  type="radio"
+                  name="listGroupRadio"
+                  value=""
+                  id="secondRadio"
+                />
+                <label class="form-check-label" for="secondRadio"
+                  >Delivery</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="box1">
+            <h3>Address</h3>
+            <div class="add">
+              <img src="./images/address.svg" alt="address" />
+              <a href="Address.html" style="font-family: DM Sans3"
+                >Add Address</a
+              >
+              <div class="about_add" style="display: none">
+                <p>
+                  66 Youssef Ghaly Street, Miami , Alexandria. Appointment No.
+                  22 Floor No.4
+                </p>
+                <p>+20 154 256 1235</p>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <h3>Payment Method</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input
+                  class="form-check-input me-1"
+                  type="radio"
+                  name="listGroupRadio2"
+                  value=""
+                  id="firstRadio"
+                  checked
+                />
+                <label class="form-check-label" for="firstRadio">Cash</label>
+              </li>
+              <li class="list-group-item">
+                <input
+                  class="form-check-input me-1"
+                  type="radio"
+                  name="listGroupRadio2"
+                  value=""
+                  id="secondRadio"
+                />
+                <label class="form-check-label" for="secondRadio"
+                  >Credit Card</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="box1">
+            <h3>Date</h3>
+            <input
+              class="date"
+              name="date"
+              placeholder="Select Date"
+              readonly=""
+              id="datepicker"
+              type="text"
+            />
+          </div>
+          <input type="submit" value="Place Order" class="btn_page" />
+        </form>
       </div>
-    </div>
-    <div class="box1">
-      <h3>Payment Method</h3>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <input class="form-check-input me-1" type="radio" name="listGroupRadio2" value="" id="firstRadio" checked>
-        <label class="form-check-label" for="firstRadio">Cash</label>
-      </li>
-      <li class="list-group-item">
-        <input class="form-check-input me-1" type="radio" name="listGroupRadio2" value="" id="secondRadio">
-        <label class="form-check-label" for="secondRadio">Credit Card</label>
-      </li>
-    </ul>
-    </div>
-    <div class="box1">
-      <h3>Date</h3>
-      <input class='date' name='date' placeholder='Select Date' readonly='' id="datepicker" type='text'>
-
-    </div>
-    <input type="submit" value="Place Order" class="btn_page">
-  </form>
-</div>
-<div class="part2">
-  <h2 class="headtitle">Booking Summary</h2>
-  <div class="box">
-    <ul>
-      <li>
-        <h3>Provider</h3>
-        <h4>Muhammed Ahmed</h4>
-      </li>
-      <li>
-        <h3>Service Type</h3>
-        <h4>Repair car’s Wheels</h4>
-      </li>
-      <li class="amount">
-        <h3>Amount</h3>
-        <h4>2500 EGP</h4>
-      </li>
-    </ul>
-  </div>
-
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-  <div class="container">
-    <div class=" fotter_content">
-      <div class="head">
-        <h1>
-           <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
-        </h1>
-        <p>Find All The Services You Need In Find Help</p>
-      </div>
-      <div class="part">
-        <h2>About</h2>
-        <div class="links">
-          <a href="">Contact Us</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms of Use</a>
-        </div>
-      </div>
-      <div class="part">
-        <h2>Countries</h2>
-        <div class="links links2">
-          <p>Kuwait</p>
-          <p>Egypt</p>
-          <p>Bahrain</p>
-          <p>Bahrain</p>
-          <p>Bahrain</p>
-          <p>Bahrain</p>
-          <p>Bahrain</p>
+      <div class="part2">
+        <h2 class="headtitle">Booking Summary</h2>
+        <div class="box">
+          <ul>
+            <li>
+              <h3>Provider</h3>
+              <h4>Muhammed Ahmed</h4>
+            </li>
+            <li>
+              <h3>Service Type</h3>
+              <h4>Repair car’s Wheels</h4>
+            </li>
+            <li class="amount">
+              <h3>Amount</h3>
+              <h4>2500 EGP</h4>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="part">
-        <h2 style="padding: 0px 20px">Follow Us</h2>
-        <div class="links_social">
-          <a href="">
-            <img src="./images/facebook.webp" alt="facebook" />
-          </a>
+    </section>
 
-          <a href="">
-            <img src="./images/linkedin.webp" alt="instagram" />
-          </a>
-          <a href="">
-            <img src="./images/insta.webp" alt="linkedin" />
-          </a>
-          <a href="">
-            <img src="./images/twiiter.webp" alt="twitter" />
-          </a>
+    <footer>
+      <div class="container">
+        <div class="fotter_content">
+          <div class="head">
+            <h1>
+              <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
+            </h1>
+            <p>Find All The Services You Need In Find Help</p>
+          </div>
+          <div class="part">
+            <h2>About</h2>
+            <div class="links">
+              <a href="">Contact Us</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms of Use</a>
+            </div>
+          </div>
+          <div class="part">
+            <h2>Countries</h2>
+            <div class="links links2">
+              <p>Kuwait</p>
+              <p>Egypt</p>
+              <p>Bahrain</p>
+              <p>Bahrain</p>
+              <p>Bahrain</p>
+              <p>Bahrain</p>
+              <p>Bahrain</p>
+            </div>
+          </div>
+          <div class="part">
+            <h2 style="padding: 0px 20px">Follow Us</h2>
+            <div class="links_social">
+              <a href="">
+                <img src="./images/facebook.webp" alt="facebook" />
+              </a>
+
+              <a href="">
+                <img src="./images/linkedin.webp" alt="instagram" />
+              </a>
+              <a href="">
+                <img src="./images/insta.webp" alt="linkedin" />
+              </a>
+              <a href="">
+                <img src="./images/twiiter.webp" alt="twitter" />
+              </a>
+            </div>
+            <div class="store">
+              <a href=""><img src="./images/app.webp" alt="app store" /></a>
+              <a href=""
+                ><img src="./images/google.webp" alt="google play"
+              /></a>
+            </div>
+          </div>
         </div>
-        <div class="store">
-          <a href=""><img src="./images/app.webp" alt="app store" /></a>
-          <a href=""
-            ><img src="./images/google.webp" alt="google play"
-          /></a>
+        <div class="copy">
+          <p>
+            © Find Help, 2019-2022 Made by
+            <a href="#">AQuadic Solution Company</a>
+          </p>
+          <p>All rights reserved.</p>
         </div>
       </div>
-    </div>
-    <div class="copy">
-      <p>
-        © Find Help, 2019-2022 Made by
-        <a href="#">AQuadic Solution Company</a>
-      </p>
-      <p>All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
-  
-<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
     <script>
-$(document).ready(function() {
-	$('.time').on('change', function(e) {
-		$(this).addClass('selected');
-	});
-	$('#geocomplete').geocomplete({
-		details: 'form',
-		types: ['geocode', 'establishment'],
-	});
-	submitForms = function() {
-		document.getElementById('forms').submit();
-	};
-});
+      $(document).ready(function () {
+        $(".time").on("change", function (e) {
+          $(this).addClass("selected");
+        });
+        $("#geocomplete").geocomplete({
+          details: "form",
+          types: ["geocode", "establishment"],
+        });
+        submitForms = function () {
+          document.getElementById("forms").submit();
+        };
+      });
 
-// JqueryUI Datepicker
-$(function() {
-  $('.date').datepicker({
-		showOtherMonths: true,
-    selectOtherMonths: false,
-    dateFormat: 'dd M, yy',
-    minDate: new Date('1940-01-01'),
-    showButtonPanel: true,
-    changeMonth: true,
-    changeYear: true,
-    yearRange: '1940:2099'
-
-	});
-});
-        </script>
+      // JqueryUI Datepicker
+      $(function () {
+        $(".date").datepicker({
+          showOtherMonths: true,
+          selectOtherMonths: false,
+          dateFormat: "dd M, yy",
+          minDate: new Date("1940-01-01"),
+          showButtonPanel: true,
+          changeMonth: true,
+          changeYear: true,
+          yearRange: "1940:2099",
+        });
+      });
+    </script>
   </body>
 </html>

@@ -22,11 +22,51 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="checkOut container m90">
-      <div class="successfully">
-        <img src="./images/successful.webp" alt="successful" />
-        <h2>YOUR BOOKING IS SUCCESSFULLY COMPLETED</h2>
-        <h3>Thank you for your trust in <span>Find Help</span></h3>
+    <div class="container breadcrumbDetails">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">Home</li>
+          <li class="breadcrumb-item" aria-current="page">Account</li>
+          <li class="breadcrumb-item" aria-current="page">Addressess</li>
+        </ol>
+      </nav>
+    </div>
+
+    <section class="account container">
+      <div class="account_info personal_info">
+        <div class="part1">
+          <ul>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="myServices.html ">My services</a></li>
+            <li><a href="Prmoted.html">Promotion</a></li>
+            <li><a href="myOrders.html">My Orders</a></li>
+            <li>
+              <a href="profile_Addressess.html" class="active">Addresses</a>
+            </li>
+            <li><a href="">Log out</a></li>
+          </ul>
+        </div>
+        <div class="Profile">
+          <h2 class="cart_title2">Addresses</h2>
+          <form class="">
+            <div class="box1 address_page">
+              <div class="myAddress">
+                <img src="./images/address.svg" alt="address" />
+                <div class="about_address">
+                  <p>
+                    66 Youssef Ghaly Street, Miami , Alexandria. Appointment No.
+                    22 Floor No.4
+                  </p>
+                  <p>+20 154 256 1235</p>
+                </div>
+              </div>
+              <a href="profile_NewAddress.html" class="addAddress">
+                <h5>+</h5>
+                <h6>Add New Address</h6>
+              </a>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

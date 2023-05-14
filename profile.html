@@ -22,11 +22,73 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="checkOut container m90">
-      <div class="successfully">
-        <img src="./images/successful.webp" alt="successful" />
-        <h2>YOUR BOOKING IS SUCCESSFULLY COMPLETED</h2>
-        <h3>Thank you for your trust in <span>Find Help</span></h3>
+    <div class="container breadcrumbDetails">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">Home</li>
+
+          <li class="breadcrumb-item" aria-current="page">Account</li>
+          <li class="breadcrumb-item" aria-current="page">My Profile</li>
+        </ol>
+      </nav>
+    </div>
+
+    <section class="account container">
+      <div class="account_info personal_info">
+        <div class="part1">
+          <ul>
+            <li><a href="profile.html" class="active">My Profile</a></li>
+            <li><a href="myServices.html">My services</a></li>
+            <li><a href="Prmoted.html">Promotion</a></li>
+            <li><a href="myOrders.html">My Orders</a></li>
+            <li><a href="profile_Addressess.html">Addresses</a></li>
+            <li><a href="">Log out</a></li>
+          </ul>
+        </div>
+        <div class="Profile">
+          <h2 class="cart_title2">Personal Details</h2>
+          <div class="img_persone">
+            <img src="./images/person.webp" class="person" alt="person" />
+            <button>
+              <img src="./images/Camera.svg" alt="Camera" />
+            </button>
+          </div>
+          <form class="row g-3 form_page">
+            <div class="col-md-12">
+              <label for="inputname4 " class="form-label">Full Name </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputname4"
+                placeholder="Full Name"
+                value="Donia El Wazery"
+              />
+            </div>
+            <div class="col-md-12 tel_num">
+              <label for="inputtel " class="form-label">Phone Number </label>
+              <!-- <p class="tel_code">+20</p> -->
+              <input
+                type="tel"
+                class="form-control"
+                id="inputtel"
+                placeholder="Mobile Number"
+                value="152 145 7896"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="inputemail " class="form-label">Email Adress </label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputemail"
+                placeholder="Email"
+                value="doniaahmedelwazery@gmail.com"
+              />
+            </div>
+            <a href="changePassword.html" class="change">Change Password</a>
+            <button type="submit" href="" class="next btn_page">Save</button>
+          </form>
+        </div>
       </div>
     </section>
 

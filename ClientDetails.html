@@ -26,57 +26,79 @@
       <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item" aria-current="page">Home</li>
-
-          <li class="breadcrumb-item" aria-current="page">Categories</li>
-          <li class="breadcrumb-item" aria-current="page">Repairs</li>
-          <li class="breadcrumb-item" aria-current="page">Sub category</li>
-          <li class="breadcrumb-item" aria-current="page">Check Out</li>
-          <li class="breadcrumb-item" aria-current="page">Addresses</li>
+          <li class="breadcrumb-item" aria-current="page">Account</li>
+          <li class="breadcrumb-item" aria-current="page">My Order</li>
+          <li class="breadcrumb-item" aria-current="page">Provider Details</li>
         </ol>
       </nav>
     </div>
 
-    <section class="checkOut container m90">
-      <div class="part1">
-        <h2 class="headtitle">Addresses</h2>
-        <form class="box">
-          <div class="box1 address_page">
-            <div class="myAddress">
-              <img src="./images/address.svg" alt="address" />
-              <div class="about_address">
-                <p>
-                  66 Youssef Ghaly Street, Miami , Alexandria. Appointment No.
-                  22 Floor No.4
-                </p>
-                <p>+20 154 256 1235</p>
+    <section class="account container">
+      <div class="account_info personal_info">
+        <div class="part1">
+          <ul>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="myServices.html ">My services</a></li>
+            <li><a href="Prmoted.html">Promotion</a></li>
+            <li><a href="myOrders.html" class="active">My Orders</a></li>
+            <li><a href="profile_Addressess.html">Addresses</a></li>
+            <li><a href="">Log out</a></li>
+          </ul>
+        </div>
+        <div class="Profile Profile3">
+          <h2>Provider Details</h2>
+          <div class="infoclient">
+            <div class="information">
+              <img src="./images/person.webp" class="person" alt="person" />
+              <div class="name_phone">
+                <h3>Adam Khaled</h3>
+                <div class="infoPhone">
+                  <img src="./images/telephone.svg" alt="telephone" />
+                  <p style="direction: ltr">+20 125 154 1598</p>
+                </div>
               </div>
             </div>
-            <a href="New_Address.html" class="addAddress">
-              <h5>+</h5>
-              <h6>Add New Address</h6>
-            </a>
+            <div class="part2">
+              <div class="clientData">
+                <h4>Booking details</h4>
+                <h5>English Session</h5>
+                <ul>
+                  <li>
+                    <img src="./images/Time-Circle2.svg" alt="Time-Circle" />
+                    <p>2 hrs Start 6:00 PM</p>
+                  </li>
+                  <li>
+                    <img src="./images/Calendar.svg" alt="Calendar" />
+                    <p>26 Nov,2022</p>
+                  </li>
+                  <li>
+                    <img src="./images/Location2.svg" alt="Location" />
+                    <p>sidi bisher, alex</p>
+                  </li>
+                  <li>
+                    <img src="./images/Location2.svg" alt="Location" />
+                    <p>On Site</p>
+                  </li>
+                  <li>
+                    <img src="./images/cash.svg" alt="cash" />
+                    <p>Pay On Cash</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="map_client">
+                <h5>Track The Provider</h5>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13644.980469861162!2d29.985604349999996!3d31.2416371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52fadf4220f%3A0x7d08dceaad4557bd!2sSan%20Stefano%20Grand%20Plaza!5e0!3m2!1sen!2seg!4v1678613910844!5m2!1sen!2seg"
+                  width="410"
+                  height="324"
+                  style="border: 0; border-radius: 10px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
-
-          <input type="submit" value="Next " class="btn_page" />
-        </form>
-      </div>
-      <div class="part2">
-        <h2 class="headtitle">Booking Summary</h2>
-        <div class="box">
-          <ul>
-            <li>
-              <h3>Provider</h3>
-              <h4>Muhammed Ahmed</h4>
-            </li>
-            <li>
-              <h3>Service Type</h3>
-              <h4>Repair car’s Wheels</h4>
-            </li>
-            <li class="amount">
-              <h3>Amount</h3>
-              <h4>2500 EGP</h4>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
