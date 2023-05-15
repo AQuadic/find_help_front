@@ -20,29 +20,56 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="toggler-icon top-bar"></span>
-          <span class="toggler-icon middle-bar"></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
+        <div class="phone_nav ac_nav">
+          <!-- if found user ->"dropdown" disblay:block and login btn disblay:none  -->
+          <div class="dropdown" style="position: relative; display: none">
+            <h4
+              class="dropdown-toggle nav_btn"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Donia,
+            </h4>
+
+            <ul class="dropdown-menu myAcc">
+              <li>
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="myServices.html">My Services</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="Prmoted.html">Promotion</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="myOrders.html">My Orders</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="profile_Addressess.html"
+                  >Addresses</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="LogIn.html" class="nav_btn"
+            ><img src="./images/login.svg" class="img_login" alt="login" />
+            <p>Login</p></a
+          >
+          <button class="search btnsearch">
+            <img src="./images/search.svg" alt="search" />
+          </button>
+        </div>
+
         <div class="logo">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="./images/logo.svg" alt="" />
           </a>
           <div
             class="collapse navbar-collapse col-dec"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -50,59 +77,13 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  <img src="./images/categorization.svg" alt="categories" />
                   Categories
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <h5>Shop by Animes</h5>
+                <ul class="dropdown-menu row">
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Repairs</h5>
                     <div class="ul_all">
-                      <ul>
-                        <li><a class="dropdown-item" href="#">Jojo</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >The seven deadly Sins</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >The seven deadly Sins</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-                      </ul>
                       <ul>
                         <li>
                           <a class="dropdown-item" href="#"
@@ -140,32 +121,20 @@
                       </ul>
                     </div>
                   </li>
-                  <li>
-                    <h5>Shop by Categories</h5>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Cleaning Services</h5>
                     <div class="ul_all">
                       <ul>
-                        <li><a class="dropdown-item" href="#">Jojo</a></li>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
                         <li>
                           <a class="dropdown-item" href="#"
-                            >The seven deadly Sins</a
+                            >Mobile Accessories</a
                           >
                         </li>
 
                         <li>
                           <a class="dropdown-item" href="#"
-                            >The seven deadly Sins</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
-                          >
-                        </li>
-
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Kuroko’s Basketball</a
+                            >Mobile Accessories</a
                           >
                         </li>
                         <li>
@@ -190,7 +159,411 @@
                             >Kuroko’s Basketball</a
                           >
                         </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
                       </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Salon</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Home Exterior</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Home Maintenance</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Fashion</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Construction Services</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Services</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Medicine</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Engineering</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Travel and Tourism</h5>
+                    <div class="ul_all">
+                      <ul>
+                        <li><a class="dropdown-item" href="#">Gifts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Mobile Accessories</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Kuroko’s Basketball</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Socks</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-md-4 col-sm-6 col-12">
+                    <h5>Fun</h5>
+                    <div class="ul_all">
                       <ul>
                         <li><a class="dropdown-item" href="#">Gifts</a></li>
                         <li>
@@ -233,87 +606,86 @@
                     </div>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
 
-        <div class="phone_nav ac_nav">
-          <div class="dropdown">
+        <div class="right_nav ac_nav" id="">
+          <button id="search" class="btnsearch">
+            <img src="./images/search.svg" class="search" alt="search" />
+          </button>
+          <a href="#"> <img src="./images/fav.svg" class="fav" alt="fav" /></a>
+          <a href="#" class="nav_btn"
+            ><img src="./images/add.svg" class="add" alt="Add_Services" />
+            <p>Add Services</p></a
+          >
+          <div class="dropdown" style="position: relative">
             <h4
-              class="dropdown-toggle"
+              class="dropdown-toggle nav_btn"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              My Account
+              Donia,
             </h4>
 
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu myAcc">
               <li>
-                <a class="dropdown-item" href="index.html">Donia El Wazery</a>
+                <a class="dropdown-item" href="profile.html">My Profile</a>
               </li>
               <li>
-                <a class="dropdown-item" href="wish_list.html">Wish List</a>
+                <a class="dropdown-item" href="myServices.html">My Services</a>
               </li>
               <li>
-                <a class="dropdown-item" href="profile.html">My Orders</a>
+                <a class="dropdown-item" href="Prmoted.html">Promotion</a>
               </li>
               <li>
-                <a class="dropdown-item" href="addresses.html">Addresses</a>
+                <a class="dropdown-item" href="myOrders.html">My Orders</a>
               </li>
               <li>
-                <a class="dropdown-item" href="personal_info.html"
-                  >Account Settings</a
+                <a class="dropdown-item" href="profile_Addressess.html"
+                  >Addresses</a
                 >
               </li>
             </ul>
           </div>
-          <img src="./images/shop.svg" alt="" />
+          <a href="LogIn.html" class="nav_btn login_btn" style="display: none"
+            ><img src="./images/login.svg" class="img_login" alt="login" />
+            <p>Login</p></a
+          >
+          <button class="lang">
+            <img src="./images/lang.webp" class="lang" alt="lang" />
+            <p>En</p>
+          </button>
         </div>
-        <div class="right_nav" id="">
-          <form action="">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="What are you looking for?"
-              aria-label="Search"
-            />
-          </form>
-          <div class="ac_nav">
-            <div class="dropdown">
-              <h4
-                class="dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                My Account
-              </h4>
 
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="index.html">Donia El Wazery</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="wish_list.html">Wish List</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="profile.html">My Orders</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="addresses.html">Addresses</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="personal_info.html"
-                    >Account Settings</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <img src="./images/shop.svg" alt="" />
-          </div>
-        </div>
         <div class="collapse col-phone" id="navbarSupportedContent">
+          <div class="right_nav ac_nav" id="">
+            <a href="#">
+              <img src="./images/fav.svg" class="fav" alt="fav"
+            /></a>
+            <a href="#" class="nav_btn"
+              ><img src="./images/add.svg" class="add" alt="Add_Services" />
+              <p>Add Services</p></a
+            >
+            <button class="lang">
+              <img src="./images/lang.webp" class="lang" alt="lang" />
+              <p>En</p>
+            </button>
+          </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
@@ -323,7 +695,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Shop by Animes
+                Repairs
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -393,7 +765,287 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Shop by Categories
+                Cleaning Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="ul_all">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Salon
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="ul_all">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home Exterior
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="ul_all">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home Maintenance
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="ul_all">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li><a class="dropdown-item" href="#">Jojo</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >The seven deadly Sins</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Kuroko’s Basketball</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fashion
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -458,6 +1110,9 @@
           </ul>
         </div>
       </div>
+      <form action="" id="form_nav" class="input_srearch">
+        <input type="search" placeholder="Search For ......." />
+      </form>
     </nav>
 
     <section class="find">
@@ -1000,9 +1655,17 @@
         </div>
       </div>
     </footer>
-
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+      const search = document.querySelectorAll(".btnsearch");
+      const div = document.getElementById("form_nav");
+      search.forEach(function (button) {
+        button.addEventListener("click", function () {
+          div.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

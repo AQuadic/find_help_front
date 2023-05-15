@@ -10,18 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
       integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -1123,264 +1114,125 @@
         <input type="search" placeholder="Search For ......." />
       </form>
     </nav>
-    <div class="container breadcrumbDetails">
-      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item" aria-current="page">Home</li>
 
-          <li class="breadcrumb-item" aria-current="page">Categories</li>
-          <li class="breadcrumb-item" aria-current="page">Repairs</li>
-          <li class="breadcrumb-item" aria-current="page">Sub category</li>
-          <li class="breadcrumb-item" aria-current="page">Check Out</li>
-          <li class="breadcrumb-item" aria-current="page">Addresses</li>
-          <li class="breadcrumb-item" aria-current="page">Add New Address</li>
-        </ol>
-      </nav>
-    </div>
-
-    <section class="checkOut container m90">
-      <div class="part1">
-        <h2 class="headtitle">Addresses</h2>
-        <div class="box">
-          <form class="row g-3 form_page">
-            <!-- map  -->
-
-            <div class="map col-md-12">
-              <label class="form-label">Select Delivery Location</label>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13644.980469861162!2d29.985604349999996!3d31.2416371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c52fadf4220f%3A0x7d08dceaad4557bd!2sSan%20Stefano%20Grand%20Plaza!5e0!3m2!1sen!2seg!4v1678613910844!5m2!1sen!2seg"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="col-md-6">
-              <label for="inputName " class="form-label">First Name </label>
-
-              <input
-                type="text"
-                class="form-control"
-                id="inputNametext"
-                placeholder="your first name"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputLast " class="form-label">Last Name </label>
-
-              <input
-                type="text"
-                class="form-control"
-                id="inputLasttext"
-                placeholder="your Last name"
-              />
-            </div>
-            <div class="col-md-12">
-              <label for="inputCity" class="form-label">Country </label>
-              <select id="inputCity" class="form-select">
-                <option selected>Select Your Country</option>
-                <option>Egypt</option>
-                <option>England</option>
-              </select>
-            </div>
-            <div class="col-md-12">
-              <label for="inputCity" class="form-label">City </label>
-              <select id="inputCity" class="form-select">
-                <option selected>Select Your City</option>
-                <option>alex</option>
-                <option>cairo</option>
-              </select>
-            </div>
-            <div class="col-md-12">
-              <label for="inputAddress" class="form-label">Address </label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="Type Your Address"
-              />
-            </div>
-
-            <div class="col-md-6">
-              <label for="inputBuilding " class="form-label"
-                >Building No.
-              </label>
-
-              <input
-                type="number"
-                class="form-control"
-                id="inputBuildingNumber"
-                placeholder="Number"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputBuilding Name " class="form-label"
-                >Building Name
-              </label>
-
-              <input
-                type="number"
-                class="form-control"
-                id="inputBuilding NameNumber"
-                placeholder="Number"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputFloor " class="form-label">Floor No. </label>
-
-              <input
-                type="number"
-                class="form-control"
-                id="inputFloorNumber"
-                placeholder="Number"
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inputAppointment " class="form-label"
-                >Appointment No.
-              </label>
-
-              <input
-                type="number"
-                class="form-control"
-                id="inputAppointmentNumber"
-                placeholder="Number"
-              />
-            </div>
-
-            <div class="col-md-12">
-              <label for="inputPhone " class="form-label">Mobile Number </label>
-
-              <input
-                type="tel"
-                id="phone"
-                class="form-control"
-                id="inputPhoneNumber"
-                placeholder="Your Mobile Number"
-              />
-            </div>
-          </form>
-          <input
-            type="submit"
-            value="Add Address"
-            class="btn_page btn_Address"
-          />
-        </div>
-      </div>
-      <div class="part2">
-        <h2 class="headtitle">Booking Summary</h2>
-        <div class="box">
-          <ul>
-            <li>
-              <h3>Provider</h3>
-              <h4>Muhammed Ahmed</h4>
-            </li>
-            <li>
-              <h3>Service Type</h3>
-              <h4>Repair car’s Wheels</h4>
-            </li>
-            <li class="amount">
-              <h3>Amount</h3>
-              <h4>2500 EGP</h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="carts checkout container">
-      <div class="content"></div>
-    </section>
-
-    <footer>
+    <section class="page_log">
       <div class="container">
-        <div class="fotter_content">
-          <div class="head">
-            <h1>
-              <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
-            </h1>
-            <p>Find All The Services You Need In Find Help</p>
-          </div>
-          <div class="part">
-            <h2>About</h2>
-            <div class="links">
-              <a href="">Contact Us</a>
-              <a href="">Privacy Policy</a>
-              <a href="">Terms of Use</a>
-            </div>
-          </div>
-          <div class="part">
-            <h2>Countries</h2>
-            <div class="links links2">
-              <p>Kuwait</p>
-              <p>Egypt</p>
-              <p>Bahrain</p>
-              <p>Bahrain</p>
-              <p>Bahrain</p>
-              <p>Bahrain</p>
-              <p>Bahrain</p>
-            </div>
-          </div>
-          <div class="part">
-            <h2 style="padding: 0px 20px">Follow Us</h2>
-            <div class="links_social">
-              <a href="">
-                <img src="./images/facebook.webp" alt="facebook" />
-              </a>
-
-              <a href="">
-                <img src="./images/linkedin.webp" alt="instagram" />
-              </a>
-              <a href="">
-                <img src="./images/insta.webp" alt="linkedin" />
-              </a>
-              <a href="">
-                <img src="./images/twiiter.webp" alt="twitter" />
-              </a>
-            </div>
-            <div class="store">
-              <a href=""><img src="./images/app.webp" alt="app store" /></a>
-              <a href=""
-                ><img src="./images/google.webp" alt="google play"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="copy">
-          <p>
-            © Find Help, 2019-2022 Made by
-            <a href="#">AQuadic Solution Company</a>
+        <div class="box_log">
+          <h3>Type The OTP</h3>
+          <p class="dec">
+            Please enter the verification code we sent to your mobile number
           </p>
-          <p>All rights reserved.</p>
+          <form action="" class="verify">
+            <div class="passcode-wrapper">
+              <input
+                id="codeBox1"
+                type="number"
+                maxlength="1"
+                onkeyup="onKeyUpEvent(1, event)"
+                onfocus="onFocusEvent(1)"
+              />
+              <input
+                id="codeBox2"
+                type="number"
+                maxlength="1"
+                onkeyup="onKeyUpEvent(2, event)"
+                onfocus="onFocusEvent(2)"
+              />
+              <input
+                id="codeBox3"
+                type="number"
+                maxlength="1"
+                onkeyup="onKeyUpEvent(3, event)"
+                onfocus="onFocusEvent(3)"
+              />
+              <input
+                id="codeBox4"
+                type="number"
+                maxlength="1"
+                onkeyup="onKeyUpEvent(4, event)"
+                onfocus="onFocusEvent(4)"
+              />
+            </div>
+
+            <p id="counter" class="counter red">02:00 s</p>
+            <h4>
+              If you don’t receive a code!
+              <button id="resend" disabled>Resend</button>
+            </h4>
+            <input type="submit" id="ss" class="btn_page" value="Verify" />
+          </form>
+          <a href="LogIn.html" class="change_num">change Mobile Number</a>
         </div>
       </div>
-    </footer>
-    <script src="js/jquery-3.6.1.min.js"></script>
+    </section>
+
+    <section class="endPage_login">
+      <p>© Find Help, 2019-2022 Made by</p>
+      <a href="#"> AQuadic Solution Company</a>
+    </section>
     <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
-      const phoneInputField = document.querySelector("#phone");
+      const time = document.getElementById("counter");
+      const resend = document.getElementById("resend");
+      const ss = document.getElementById("ss");
 
-      function getIp(callback) {
-        fetch("https://ipinfo.io/41.47.128.120?token=6f23784d8e0441", {
-          headers: { Accept: "application/json" },
-        })
-          .then((resp) => resp.json())
-          .catch(() => {
-            return {
-              country: "eg",
-            };
-          })
-          .then((resp) => callback(resp.country));
+      const starttime = 2;
+      let secound = starttime * 60;
+
+      const myTimeout = setInterval(udtime, 1000);
+      /*ss.addEventListener('click' , function (e) {
+           e.preventDefault();
+           const myTimeout = setInterval(udtime, 1000);
+        })*/
+      function udtime() {
+        const min = Math.floor(secound / 60);
+        let sec = secound % 60;
+        sec = sec < 10 ? "0" + sec : sec;
+        if (min === 0 && sec == "00") {
+          clearInterval(myTimeout);
+          resend.disabled = false;
+          resend.classList.add("resend");
+          time.classList.add("red");
+        } else {
+          resend.classList.remove("resend");
+          time.classList.remove("red");
+        }
+
+        time.innerHTML = `0${min} : ${sec} s`;
+        secound--;
       }
-      const phoneInput = window.intlTelInput(phoneInputField, {
-        initialCountry: "auto",
-        geoIpLookup: getIp,
-        utilsScript:
-          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-      });
+    </script>
+
+    <script>
+      function getCodeBoxElement(index) {
+        return document.getElementById("codeBox" + index);
+      }
+      function onKeyUpEvent(index, event) {
+        const eventCode = event.which || event.keyCode;
+        if (getCodeBoxElement(index).value.length === 1) {
+          if (index !== 4) {
+            getCodeBoxElement(index + 1).focus();
+          } else {
+            getCodeBoxElement(index).blur();
+            // Submit code
+            console.log("submit code ");
+          }
+        }
+        if (eventCode === 8 && index !== 1) {
+          getCodeBoxElement(index - 1).focus();
+        }
+      }
+      function onFocusEvent(index) {
+        for (item = 1; item < index; item++) {
+          const currentElement = getCodeBoxElement(item);
+          if (!currentElement.value) {
+            currentElement.focus();
+            break;
+          }
+        }
+      }
     </script>
   </body>
 </html>
